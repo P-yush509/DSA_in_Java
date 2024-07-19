@@ -2,7 +2,7 @@ package DSA_in_Java.Arrays;
 
 import java.util.Arrays;
 
-public class Binary_Search_in_2D_Array {
+public class BinarySearchIn2DArray {
     public static void main(String[] args) {
         int [][] arr= {
                 {10,20,30,40},
