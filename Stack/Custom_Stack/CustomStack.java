@@ -46,4 +46,8 @@ public class CustomStack {
     public boolean isEmpty() {
         return ptr == -1;
     }
+
+
+    
+
 }

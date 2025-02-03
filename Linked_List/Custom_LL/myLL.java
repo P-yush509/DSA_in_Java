@@ -1,14 +1,14 @@
 package DSA_in_Java.Linked_List.Custom_LL;
 
 class Node{
-         int value;
+         int data;
          Node next;
 
         public Node(int value){
-            this.value=value;
+            this.data =value;
         }
         public Node(int value , Node next){
-            this.value=value;
+            this.data =value;
             this.next=next;
         }
 }
@@ -34,7 +34,7 @@ public class myLL {
     public void display() {
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.value + "-->");
+            System.out.print(temp.data + "-->");
             temp = temp.next;
         }
         System.out.println("END");
@@ -45,7 +45,7 @@ public class myLL {
         while (temp.next.next != null) {
             temp = temp.next;
         }
-        int deleted = temp.next.value;
+        int deleted = temp.next.data;
         temp.next = null;
         tail = temp;
         return deleted;
@@ -94,7 +94,7 @@ public class myLL {
         //changed
         Node temp2 = list2;
         Node list3;
-        if (list1.value <= list2.value) {
+        if (list1.data <= list2.data) {
             list3 = list1;
             temp1 = temp1.next;
         } else {
@@ -103,7 +103,7 @@ public class myLL {
         }
         Node temp3 = list3;
         while (temp1 != null && temp2 != null) {
-            if (temp1.value <= temp2.value) {
+            if (temp1.data <= temp2.data) {
                 temp3.next = temp1;
                 temp1 = temp1.next;
             } else {
@@ -220,7 +220,7 @@ public class myLL {
 
         boolean flag = true;
         while (temp1!=null && temp2!=null){
-            if (temp1.value!=temp2.value){
+            if (temp1.data !=temp2.data){
                 flag=false;
                 break;
             }

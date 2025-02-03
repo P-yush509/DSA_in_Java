@@ -18,7 +18,7 @@ public class Main {
         list1.display();
 
         Node mid = list1.middleNode(list1.head);
-        System.out.println("Middle node is "+mid.value);
+        System.out.println("Middle node is "+mid.data);
 
 //        myLL list2 = new myLL();
 //        list2.head= mid.next;
