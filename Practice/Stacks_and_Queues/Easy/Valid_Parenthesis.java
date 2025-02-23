@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Valid_Parenthesis {
     public static boolean isValid(String s) {
         Stack<Character> stack1 = new Stack<>();
-        if ((s.length()&1)==1){
+        if ((s.length()&1)==1){     // odd sized string can't be valid
             return false;
         }
 
